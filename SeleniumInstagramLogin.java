@@ -10,11 +10,14 @@ public class HelloWorld {
         driver.get("http://www.instagram.com");
         driver.manage().window().maximize();
         Thread.sleep(2000);
+        
         driver.findElement(By.name("username")).click();
         Thread.sleep(2000);
+        
         driver.findElement(By.name("username")).sendKeys("eeerrraaayyysssaaahhhiiinnn");
         driver.findElement(By.name("password")).click();
         Thread.sleep(2000);
+        
         driver.findElement(By.name("password")).sendKeys("test1234");
         driver.findElement(By.xpath("//*[@id=\"loginForm\"]/div/div[3]/button/div")).click();
 
